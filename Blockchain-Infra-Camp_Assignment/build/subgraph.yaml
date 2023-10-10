@@ -1,0 +1,30 @@
+specVersion: 0.0.5
+schema:
+  file: schema.graphql
+dataSources:
+  - kind: ethereum
+    name: ERC721Token
+    network: sepolia
+    source:
+      address: "0x7cD5bdB0C9FfA3A5eace3F0f94883eddEa94940A"
+      abi: ERC721Token
+      startBlock: 4454780
+    mapping:
+      kind: ethereum/events
+      apiVersion: 0.0.7
+      language: wasm/assemblyscript
+      entities:
+        - Approval
+        - ApprovalForAll
+        - Transfer
+      abis:
+        - name: ERC721Token
+          file: ERC721Token/abis/ERC721Token.json
+      eventHandlers:
+        - event: Approval(indexed address,indexed address,indexed uint256)
+          handler: handleApproval
+        - event: ApprovalForAll(indexed address,indexed address,bool)
+          handler: handleApprovalForAll
+        - event: Transfer(indexed address,indexed address,indexed uint256)
+          handler: handleTransfer
+      file: ERC721Token/ERC721Token.wasm
