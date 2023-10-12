@@ -1,16 +1,16 @@
 # Project Name
 ERC721Token(GarenCN)
 ## Project Introduction
-I Deployed 3 Contracts(ERC20TokenGTT, ERC721Token, NFTMarket) on Sepolia. All three contracts had been verified. The addresses are shown as follows: 
+I deployed 3 contracts(ERC20TokenGTT, ERC721Token, NFTMarket) on Sepolia. All three contracts had been verified. The addresses are shown as follows: 
 
 ERC20TokenGTT address: 0xd0DA6eB5c080b749cEeA5f2A746C91bA634426F9
 ERC721Token address: 0x7cD5bdB0C9FfA3A5eace3F0f94883eddEa94940A
 NFTMarket address: 0x63405c39F309572f1C99CDB9f915a45ba8dFe9c2
 
 <br>
-This subgraph is used for monitoring token transfer and approval of ERC721Token contract. NFTMarket contract supports NFT transactions by using ERC20TokenGTT.
+This subgraph is used for monitoring token transfer and approval in ERC721Token contract. NFTMarket contract supports NFT transactions by using ERC20TokenGTT. 
 
-There were two EOAs that interacted with NFTMarket contract:
+There are two EOAs that interacted with NFTMarket contract:
 
 EOA1: 0x9314f15a04d9a69bCE94758e535e49c4e6c6770E
 EOA2: 0x545383E5263D519B086C4e37964413e1bA17D756
@@ -22,8 +22,8 @@ EOA2: 0x545383E5263D519B086C4e37964413e1bA17D756
 ## Project Slide
 There were several transactions and events occurred in ERC721Token contract.
 1. EOA1 had minted a new NFT (tokenId: 1). This NFT transferred from `address(0)` to EOA1. The `transfer` event occurred.
-2. EOA1 had approved NFTMarket contract so that the latter is able to list NFTs of the approver). The `approve` event occurred.
-3. NFTMarket contract listed the new NFT. The `transfer` event occurred. At the same time, NFTMarket contract approved EOA1 considering the practicability of delisting NFTs by the NFT original owner(not NFTMarket). So, the `approve` event occurred as well.
+2. EOA1 had approved NFTMarket contract so that the latter can list NFTs of the approver. The `approve` event occurred.
+3. NFTMarket contract listed the new NFT. The `transfer` event occurred. At the same time, NFTMarket contract approved EOA1 considering the practicability of delisting NFT by the original owner instead of the NFTMarket contract. So, the `approve` event occurred as well.
 4. EOA2 as a buyer, bought the new NFT with 12,000 GTT (ERC20 token, which is supported in NFTMarket contract). The `transfer` event occurred.
 
 In total, there were 5 events that occurred. This subgraph successfully captured all the events that were completely consistent with the result queried on Etherscan.
