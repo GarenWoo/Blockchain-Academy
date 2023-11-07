@@ -3,6 +3,8 @@ Frictionless Cross-chain Swap
 ## Project Introduction
 目前的web3世界的开放性有目共睹，但web3世界仍需要更多的基础设施降低用户的使用难度，以便让更多人轻松参与，以此扩大web3的市场规模。
 
+The openness of the current web3 world is obvious to all, but the web3 world still needs more infrastructure to reduce the difficulty of use for users so that more people can easily participate, thereby expanding the market size of web3.
+
 Circle公司的稳定币产品 USDC 在区块链网络的流通性十分巨大，实现现实世界与区块链网络的货币锚定，该公司新近推出的CCTP（Cross-chain Transfer Protocol）实现链上资产 burn and mint 的跨链方式，并借助 USDC 作为中间媒介，实现资产的跨链转移，有望实现 USDC 和链上资产更大的流通性。
 
 我们借助CCTP，开发一款新的产品：Frictionless Cross-chain Swap，该产品将基于CCTP的跨链机制，实现更多可能性：
