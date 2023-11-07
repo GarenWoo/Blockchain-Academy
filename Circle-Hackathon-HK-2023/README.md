@@ -52,10 +52,11 @@ With the help of CCTP, we developed a new product: Frictionless Cross-chain Swap
    
 ## Project Preview Image
 The preview image is an informal front page in the procedure of development, which does not represent the final version of it. The new pages are in the process.
+
 ![image](https://github.com/GarenWoo/Blockchain-Academy/assets/126687110/2d4c8b1f-ce8d-42de-9e57-5e312e3c6266)
 
 ## Project Slide
-
+To do...
 
 ## Team Information
 Garen Woo(core code), Joe(front-end design & docking), Yuyuista, Loicism, hitefork and Lanqing Zhong.
