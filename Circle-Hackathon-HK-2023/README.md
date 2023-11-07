@@ -48,10 +48,11 @@ With the help of CCTP, we developed a new product: Frictionless Cross-chain Swap
    
       b. Testnet: Ethereum Goerli / Avalanche Fuji / Optimism Goerli / Arbitrum Goerli / Base Goerli
    
-5. Higher security of private key management: The original script that calls the CCTP smart contract, needs to obtain the private key of the sender and receiver, which is written in the env file. Instead of controlling the private key directly, this product obtains the wallet object which is totally controlled by the Metamask itself. This product effectively prevents the leakage of private key。
+5. Higher security of private key management: The original script that calls the CCTP smart contract, needs to obtain the private key of the sender and receiver, which is written in the env file. Instead of controlling the private key directly, this product obtains the wallet object which is totally controlled by the Metamask itself. This product effectively prevents the leakage of private keys。
    
 ## Project Preview Image
-
+The preview image is an informal front page in the procedure of development, which does not represent the final version of it. The new pages are in the process.
+![image](https://github.com/GarenWoo/Blockchain-Academy/assets/126687110/2d4c8b1f-ce8d-42de-9e57-5e312e3c6266)
 
 ## Project Slide
 
