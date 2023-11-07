@@ -59,6 +59,6 @@ The preview image is an informal front page in the procedure of development, whi
 To do...
 
 ## Team Information
-Garen Woo(core code), Joe(front-end design & docking), Yuyuista, Loicism, hitefork and Lanqing Zhong.
+Garen Woo(core coding), Joe(front-pages design & docking to core codes), Yuyuista, Loicism, hitefork and Lanqing Zhong.
 ## Project Address
 https://github.com/GarenWoo/Blockchain-Academy/tree/main/Circle-Hackathon-HK-2023
